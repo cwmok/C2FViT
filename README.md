@@ -26,12 +26,12 @@ This code was tested with `Pytorch 1.7.1` and NVIDIA TITAN RTX GPU.
 ## Inference
 Template-matching (MNI152):
 
-`python Test_C2FViT_template_matching.py --model {model_path} --fixed ../Data/MNI152_T1_1mm_brain_pad_RSP.nii.gz --moving {moving_img_path}
+`python Test_C2FViT_template_matching.py --modelpath {model_path} --fixed ../Data/MNI152_T1_1mm_brain_pad_RSP.nii.gz --moving {moving_img_path}
 `
 
 Pairwise image registration:
 
-`python Test_C2FViT_pairwise.py --model {model_path} --fixed {fixed_img_path} --moving {moving_img_path}`
+`python Test_C2FViT_pairwise.py --modelpath {model_path} --fixed {fixed_img_path} --moving {moving_img_path}`
 
 
 ## Pre-trained model weights
