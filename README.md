@@ -7,7 +7,7 @@ This is the official Pytorch implementation of "Affine Medical Image Registratio
 - `NumPy`
 - `NiBabel`
 
-This code has been tested with `Pytorch 1.7.1` and NVIDIA TITAN RTX GPU.
+This code was tested with `Pytorch 1.7.1` and NVIDIA TITAN RTX GPU.
 
 ## Training and testing scripts
 - `Train_C2FViT_pairwise.py`: Train a C2FViT model in an <u>unsupervised</u> manner for pairwise registration (Inter-subject registration).
