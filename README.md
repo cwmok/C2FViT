@@ -47,7 +47,9 @@ Semi-supervised:
 
 ## Train your own model
 Step 0 (optional): Download the preprocessed OASIS dataset from https://github.com/adalca/medical-datasets/blob/master/neurite-oasis.md and place it under the `Data` folder.
+
 Step 1: Replace `/PATH/TO/YOUR/DATA` with the path of your training data, e.g., `../Data/OASIS`, and make sure `imgs` and `labels` are properly loaded in the training script.
+
 Step 2: Run `python {training_script}`, see "Training and testing scripts" for more details.
 
 ## Publication
