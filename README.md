@@ -44,8 +44,8 @@ Unsupervised:
 - [C2FViT_affine_COM_template_matching_stagelvl3_116000.pth](https://drive.google.com/file/d/1uIItkfByyDYtxVxsjems_1HATRzcVCWX/view?usp=sharing)
 
 Semi-supervised:
-- (will be available soon)
-- (will be available soon)
+- [C2FViT_affine_COM_pairwise_semi_stagelvl3_95000.pth](https://drive.google.com/file/d/1T5JvXa3dCkFoFXNe5k7m3TDVn9AJv2_H/view?usp=sharing)
+- [C2FViT_affine_COM_template_matching_semi_stagelvl3_130000.pth](https://drive.google.com/file/d/1bfh_jVOK5Ip2bBuTpCPYlQGFCMWpG_cb/view?usp=sharing)
 
 ## Train your own model
 Step 0 (optional): Download the preprocessed OASIS dataset from https://github.com/adalca/medical-datasets/blob/master/neurite-oasis.md and place it under the `Data` folder.
