@@ -676,7 +676,7 @@ class NCC(torch.nn.Module):
     """
     local (over window) normalized cross correlation
     """
-    def __init__(self, win=7, eps=1e-8):
+    def __init__(self, win=7, eps=1e-5):
         super(NCC, self).__init__()
         self.win = win
         self.eps = eps
@@ -709,8 +709,7 @@ class NCC(torch.nn.Module):
         J2_sum = conv_fn(J2, weight, padding=int(win_size/2))
         IJ_sum = conv_fn(IJ, weight, padding=int(win_size/2))
 
-        # compute cross correlation
-        win_size = np.prod(self.win)
+        # compute cross correltorch. Sin     win_size = np.prod(self.win)
         u_I = I_sum/win_size
         u_J = J_sum/win_size
 
