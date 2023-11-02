@@ -179,7 +179,7 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument("--modelname", type=str,
                         dest="modelname",
-                        default='C2FViT_affine_COM_template_matching_semi_',
+                        default='C2FViT_affine_COM_template_matching_',
                         help="Model name")
     parser.add_argument("--lr", type=float,
                         dest="lr", default=1e-4, help="learning rate")

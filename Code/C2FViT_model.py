@@ -684,7 +684,7 @@ class NCC(torch.nn.Module):
 
     def forward(self, I, J):
         ndims = 3
-        win_size = self.w_temp
+        win_size_1d = self.w_temp
 
         # set window size
         if self.win is None:
@@ -703,13 +703,14 @@ class NCC(torch.nn.Module):
 
         # compute filters
         # compute local sums via convolution
-        I_sum = conv_fn(I, weight, padding=int(win_size/2))
-        J_sum = conv_fn(J, weight, padding=int(win_size/2))
-        I2_sum = conv_fn(I2, weight, padding=int(win_size/2))
-        J2_sum = conv_fn(J2, weight, padding=int(win_size/2))
-        IJ_sum = conv_fn(IJ, weight, padding=int(win_size/2))
+        I_sum = conv_fn(I, weight, padding=int(win_size_1d/2))
+        J_sum = conv_fn(J, weight, padding=int(win_size_1d/2))
+        I2_sum = conv_fn(I2, weight, padding=int(win_size_1d/2))
+        J2_sum = conv_fn(J2, weight, padding=int(win_size_1d/2))
+        IJ_sum = conv_fn(IJ, weight, padding=int(win_size_1d/2))
 
-        # compute cross correltorch. Sin     win_size = np.prod(self.win)
+        # compute cross correltorch.
+        win_size = win_size_1d**ndims
         u_I = I_sum/win_size
         u_J = J_sum/win_size
 
